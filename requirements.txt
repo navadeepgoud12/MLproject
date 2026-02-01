@@ -1,3 +1,5 @@
+flask
+gunicorn
 numpy
 matplotlib
 pandas
@@ -6,6 +8,6 @@ scikit-learn
 catboost
 xgboost
 dill
-gunicorn
+
 
 #-e .
