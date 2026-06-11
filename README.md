@@ -65,26 +65,47 @@ This project uses machine learning techniques to predict a student's mathematics
 ---
 
 ## 📂 Project Structure
+
+```text
 MLproject/
 │
 ├── artifacts/
+│   ├── model.pkl
+│   ├── preprocessor.pkl
+│   └── train.csv
+│
 ├── notebook/
+│   ├── EDA.ipynb
+│   └── Model_Training.ipynb
+│
 ├── src/
-│ ├── components/
-│ ├── pipeline/
-│ ├── logger.py
-│ ├── exception.py
-│ └── utils.py
+│   ├── components/
+│   │   ├── data_ingestion.py
+│   │   ├── data_transformation.py
+│   │   └── model_trainer.py
+│   │
+│   ├── pipeline/
+│   │   ├── predict_pipeline.py
+│   │   └── train_pipeline.py
+│   │
+│   ├── logger.py
+│   ├── exception.py
+│   └── utils.py
 │
 ├── templates/
+│   ├── home.html
+│   └── index.html
+│
 ├── static/
+│
+├── logs/
+│
 ├── app.py
 ├── requirements.txt
 ├── setup.py
-└── README.md
-
-
----
+├── README.md
+└── .gitignore
+```
 
 ## 🔄 Project Workflow
 
